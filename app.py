@@ -56,8 +56,5 @@ def index():
         result = top_sentences(url)
         # content_of_url = text_from_url(url)
         # return content_of_url
-        return result
+        return render_template("result.html", res = result)
     return render_template("index.html")
-
-if __name__ == "__main__":
-    app.run(debug=True)
