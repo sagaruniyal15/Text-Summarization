@@ -4,11 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Summarizer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            margin-top: 4rem;
+            background-color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            font-size: larger;
+        }
+        .search-container {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        .search-input {
+            width: 400px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .search-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <form method = "POST">
-        <input type="text" name='url' id = 'url'>
-        <input type="submit" name='submit' id = 'submit'>
-    </form>
+    <div class="header">
+        <h1>Text Summarizer</h1>
+    </div>
+
+    <div class="search-container">
+        <form method="POST">
+            <input type="text" class="search-input" name="url" id="url" placeholder="Enter Wikipedia Link Here...">
+            <br>
+            <button type="submit" class="search-button" name="submit" id="submit">Enter</button>
+        </form>
+    </div>
 </body>
 </html>
