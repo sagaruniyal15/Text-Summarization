@@ -2,4 +2,5 @@ Flask
 nltk
 beautifulsoup4
 pandas
+requests
 Gunicorn
